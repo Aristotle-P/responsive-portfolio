@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/responsive-portfolio/static/media/microblogger.61ab18f3.png"
   },
   {
-    "revision": "b6e38ed8509334364810d58208ff34df",
+    "revision": "62c9fe9eede7517f61c321a287d77ebe",
     "url": "/responsive-portfolio/index.html"
   }
 ];
