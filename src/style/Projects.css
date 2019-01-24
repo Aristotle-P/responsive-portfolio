@@ -1,0 +1,127 @@
+.projects {
+  /* background-color: rgb(31, 31, 31); */
+}
+
+.projects-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.12rem;
+  font-weight: 300;
+  color: #fbfbfb;
+  text-align: center;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.project-card {
+  background-size: cover;
+  height: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-one-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/clientpanel.png);
+}
+
+.project-two-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/contactmanager.png);
+}
+
+.project-three-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/microblogger.png);
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.12rem;
+  color: #fbfbfb;
+  text-align: center;
+}
+
+.source {
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #7fa9bf;
+  text-align: center;
+  width: 6rem;
+  margin: 0.5rem auto 1rem auto;
+}
+
+.source::before {
+  content: '';
+  background-image: url(./images/github.png);
+  background-size: 1rem;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  right: 0.4rem;
+  top: 0.1rem;
+}
+
+.desktop-project-info {
+  display: none;
+}
+
+.desktop-project-headline {
+  display: none;
+}
+
+@media (min-width: 848px) {
+  .projects-heading {
+    font-size: 3.75rem;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .project-one-card {
+    background-image: url(./images/clientpanel.png);
+  }
+
+  .project-two-card {
+    background-image: url(./images/contactmanager.png);
+  }
+
+  .project-three-card {
+    background-image: url(./images/microblogger.png);
+  }
+
+  .desktop-project-container {
+    flex-basis: 30%;
+  }
+
+  .desktop-project-headline {
+    display: block;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fbfbfb;
+  }
+
+  .desktop-project-info {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fbfbfb;
+  }
+
+  .project-info {
+    display: none;
+  }
+}

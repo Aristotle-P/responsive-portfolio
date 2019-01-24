@@ -1,0 +1,83 @@
+.footer {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8.5rem;
+}
+
+.contact-heading {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.12rem;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+.contact-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  color: #fbfbfb;
+}
+
+.desktop-contact-links {
+  text-decoration: none;
+  color: #7fa9bf;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.fab {
+  color: #fbfbfb;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.desktop-contact-container {
+  display: none;
+}
+
+@media (min-width: 848px) {
+  .desktop-contact-container {
+    display: block;
+  }
+
+  .contact-info,
+  .contact-heading {
+    display: none;
+  }
+
+  .desktop-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop-contact-heading {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.12rem;
+    font-weight: 300;
+    color: #fbfbfb;
+  }
+
+  .desktop-contact-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #fbfbfb;
+    text-align: center;
+  }
+
+  .desktop-contact-button {
+    border: none;
+    border-radius: 0.5rem;
+    height: 1.87rem;
+    width: 9rem;
+    background-color: #c12d2d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fbfbfb;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.87rem;
+  }
+}

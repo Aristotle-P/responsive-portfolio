@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #111;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  background: none;
+  border: none;
+  color: #fbfbfb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  flex-basis: 6rem;
+  border-radius: 0.5rem;
+}
+
+.desktop-nav-links {
+  display: none;
+}
+
+.nav-links:focus {
+  background-color: #000;
+  outline: none;
+}
+
+@media (min-width: 848px) {
+  .desktop-nav-links {
+    display: block;
+    flex: 0 0 25%;
+  }
+
+  .nav-links {
+    flex: 0 0 25%;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .nav-links:hover {
+    background-color: #000;
+    outline: none;
+    cursor: pointer;
+  }
+}

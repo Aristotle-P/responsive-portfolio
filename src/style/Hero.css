@@ -1,0 +1,41 @@
+.hero {
+  background-image: url('images/mobile-hero.jpeg');
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #fbfbfb;
+  font-size: 2.12rem;
+  margin-top: 2.2rem;
+}
+
+.hero-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #fbfbfb;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 848px) {
+  .hero {
+    background-image: url('images/desktop-hero.jpeg');
+    background-size: cover;
+    height: 95vh;
+  }
+
+  .hero-title {
+    font-size: 6rem;
+    margin-top: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 3rem;
+  }
+}
